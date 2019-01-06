@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WIRQ</string>
+    <string name="connect_with_us">Connect With Us!</string>
+    <string name="picture_of_wirq_members">Picture of WIRQ Members</string>
+    <string name="listen_live">Listen Live!</string>
+    <string name="wirq_logo">WIRQ Logo</string>
+    <string name="song_request">Song Request</string>
+    <string name="song_title">Song Title</string>
+    <string name="band_name">Band Name</string>
+    <string name="include_your_name">Include Your Name</string>
+    <string name="name">Name</string>
+    <string name="wirq_studio">WIRQ Studio</string>
+    <string name="title_of_the_song_being_requested">Title of the song being requested.</string>
+    <string name="artist_name">Artist name</string>
+    <string name="include_your_name_in_the_request">Include your name in the request</string>
+    <string name="your_name">Your name</string>
+</resources>

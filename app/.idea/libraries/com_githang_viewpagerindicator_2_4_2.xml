@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.githang:viewpagerindicator-2.4.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewpagerindicator-2.4.2.aar/c53aa75c3b5ea5ccb8e21e65f979686e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewpagerindicator-2.4.2.aar/c53aa75c3b5ea5ccb8e21e65f979686e/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.githang/viewpagerindicator/2.4.2/d99a0d49ad87349c34dab91aecdc757ff7114bca/viewpagerindicator-2.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

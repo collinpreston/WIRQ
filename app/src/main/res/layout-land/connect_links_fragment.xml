@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brick_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/accentShadow"
+        android:baselineAligned="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:alpha="1"
+            android:background="@color/container"
+            android:elevation="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:translationZ="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:text="@string/connect_with_us"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/relativeLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/accent"
+            android:elevation="24dp"
+            android:padding="10dp"
+            android:translationZ="8dp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="96dp">
+
+            <Button
+                android:id="@+id/websiteBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_computer_black_24dp"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/twitterBtn" />
+
+            <Button
+                android:id="@+id/emailBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_mail_black_24dp"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                android:singleLine="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/twitterBtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/facebookBtn" />
+
+            <Button
+                android:id="@+id/twitterBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/twitter_icon"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/websiteBtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/emailBtn" />
+
+            <Button
+                android:id="@+id/facebookBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/facebook_logo"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/emailBtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/container"
+            android:elevation="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:translationZ="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/container"
+                android:elevation="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/wirq_members"
+                android:visibility="visible"
+                android:contentDescription="@string/picture_of_wirq_members" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

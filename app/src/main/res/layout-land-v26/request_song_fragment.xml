@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brick_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="50dp">
+
+        <Button
+            android:id="@+id/btnSendRequest"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/contentContainer"
+            android:layout_alignEnd="@+id/contentContainer"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:background="@drawable/ic_send_white_24dp"
+            android:gravity="bottom"
+            android:padding="15dp"
+            android:textColor="@color/accent"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/accentShadow"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:alpha="1"
+                android:background="@color/container"
+                android:elevation="24dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:translationZ="8dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_margin="15dp"
+                    android:text="@string/song_request"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/accent"
+                android:elevation="24dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:translationZ="8dp">
+
+                <EditText
+                    android:id="@+id/editTxtSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ems="10"
+                    android:hint="@string/title_of_the_song_being_requested"
+                    android:inputType="textMultiLine"
+                    android:text="@string/song_title"
+                    android:textColor="?android:attr/editTextColor"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/editTxtBand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ems="10"
+                    android:hint="@string/artist_name"
+                    android:inputType="textMultiLine"
+                    android:text="@string/band_name"
+                    android:textColor="?android:attr/editTextColor"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/chkBoxName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:checked="false"
+                    android:hint="@string/include_your_name_in_the_request"
+                    android:text="@string/include_your_name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/editTxtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:autofillHints="name"
+                    android:ems="10"
+                    android:hint="@string/your_name"
+                    android:inputType="textPersonName"
+                    android:text="@string/name"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
